@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --paragraphs: hsla(0, 0%, 100%, 0.75);
+  --background-headings-buttons: hsl(0, 0%, 95%);
+  --white : #fff;
+}
+
+/* fonts */
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  min-height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.container {
+  display: flex;
+  height: 32rem;
+  max-width: 60rem;
+  margin: 10% auto;
+  border-radius: 5px;
+}
+
+.container a {
+  display: inline-block;
+  background: var(--background-headings-buttons);
+  color: var(--Bright-orange);
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  margin-top: 4rem;
+}
+
+.container a:hover {
+  background: transparent;
+  border: 2px solid white;
+  color: var(--white);
+}
+
+.card {
+  max-width: 20rem;
+  padding: 3rem;
+  color: var(--paragraphs);
+}
+
+.card h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 2;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.sedan {
+  background: var(--Bright-orange);
+}
+
+.suv {
+  background: var(--Dark-cyan);
+}
+
+.suv a {
+  color: var(--Dark-cyan);
+}
+
+.luxury {
+  background: var(--Very-dark-cyan);
+}
+
+.luxury a {
+  color: var(--Very-dark-cyan);
+}
+
+
+/* media query */
+
+@media screen and (max-width: 901px){
+  .container {
+  display: flex;
+  flex-direction:column;
+  max-width: 30rem;
+  height:auto;
+  justify-content: center;
+  align-items: center;
+}
+}
