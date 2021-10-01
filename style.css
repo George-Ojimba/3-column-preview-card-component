@@ -14,7 +14,7 @@
   --Very-dark-cyan: hsl(179, 100%, 13%);
   --paragraphs: hsla(0, 0%, 100%, 0.75);
   --background-headings-buttons: hsl(0, 0%, 95%);
-  --white : #fff;
+  --white: #fff;
 }
 
 /* fonts */
@@ -44,10 +44,10 @@ h5 {
 
 .container {
   display: flex;
-  height: 32rem;
+  height: 33rem;
   max-width: 60rem;
   margin: 10% auto;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .container a {
@@ -88,6 +88,8 @@ h5 {
 
 .sedan {
   background: var(--Bright-orange);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .suv {
@@ -100,22 +102,37 @@ h5 {
 
 .luxury {
   background: var(--Very-dark-cyan);
+    border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .luxury a {
   color: var(--Very-dark-cyan);
 }
 
-
 /* media query */
 
-@media screen and (max-width: 901px){
+@media screen and (max-width: 901px) {
   .container {
-  display: flex;
-  flex-direction:column;
-  max-width: 30rem;
-  height:auto;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 30rem;
+    height: auto;
+  }
+
+  .sedan {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius:0;
+}
+
+
+.luxury {
+border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius: 10px;
 }
 }
